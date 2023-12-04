@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="Peices.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html"><img class="barimg" src="data:image/png;base64,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" alt=""></a>
+      </div>
+    <h1>The Peices</h1>
+    
+    <table border="1">
+        <tr>
+            <td class="board" id="white"><a href="#rook">Rook</a></td>
+            <td class="board" id="black"><a href="#knight">Knight</a></td>
+            <td class="board" id="white"><a href="#bishop">Bishop</a></td>
+            <td class="board" id="black"><a href="#queen">Queen</a></td>
+            <td class="board" id="white"><a href="#king">King</a></td>
+            <td class="board" id="black"><a href="#bishop">Bishop</a></td>
+            <td class="board" id="white"><a href="#knight">Knight</a></td>
+            <td class="board" id="black"><a href="#rook">Rook</a></td>
+        </tr>
+        <tr>
+            <td id="black" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="white" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="black" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="white" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="black" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="white" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="black" class="board"><a href="#pawn">Pawn</a></td>
+            <td id="white" class="board"><a href="#pawn">Pawn</a></td>
+        </tr>
+        <tr>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+        </tr>
+        <tr>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+        </tr>
+        <tr>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+            <td class="board" id="white"></td>
+            <td class="board" id="black"></td>
+        </tr>
+        <tr>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+            <td id="black" class="board"></td>
+            <td id="white" class="board"></td>
+        </tr>
+        <tr>
+            <td class="board" id="white">Pawn</td>
+            <td class="board" id="black">Pawn</td>
+            <td class="board" id="white">Pawn</td>
+            <td class="board" id="black">Pawn</td>
+            <td class="board" id="white">Pawn</td>
+            <td class="board" id="black">Pawn</td>
+            <td class="board" id="white">Pawn</td>
+            <td class="board" id="black">Pawn</td>
+        </tr>
+        <tr>
+            <td id="black" class="board">Rook</td>
+            <td id="white" class="board">Knight</td>
+            <td id="black" class="board">Bishop</td>
+            <td id="white" class="board">Queen</td>
+            <td id="black" class="board">King</td>
+            <td id="white" class="board">Bishop</td>
+            <td id="black" class="board">Knight</td>
+            <td id="white" class="board">Rook</td>
+        </tr>
+</table>
+<div id="pawn">
+    <h2>The Pawn</h2>
+    <ul>
+        <li>Most common peice with 8</li> 
+        <li>can move foreward 1 or attack diagnoly 1</li>  
+        <li>worth 1 point</li> 
+        <h3>Unique Moves</h6>
+        <li>On the first movement of a pawn, it can jump 2 spaces.</li>
+        <li>Promotion: if a pawn makes it to the other side of the board</li>
+        <li>En Pasant: If a pawn jumps past antother the pawn can still capture.</li>
+    </ul>
+</div>
+<div id="rook">
+<h2>The Rook</h2>
+<ul>
+    <li>Can move infinantly in any cardianl direction</li>
+    <li>Worth 5 points</li>
+    <li>Has the unique ability to castle with the king moving it into a more activr place and the king into the safety of the corner</li>
+</ul>
+</div>
+<div id="Knight">
+    <h2>The Knight</h2>
+    <ul>
+        <li>Moves in L shapes</li>
+        <li>Worth 3 points</li>
+        <li>A key peice for openings alongside the pawn due to its ability to kump over peices</li>
+    </ul>
+</div>
+<div id="Bishop">
+    <h2>The Bishop</h2>
+    <ul>
+        <li>Can move in diagnols for infinant space</li>
+        <li>Worth 3 points</li>
+        <li>Like the knight it is good early on, however unlike the knight it also excels later on</li>
+    </ul>
+</div>
+<div id="queen">
+    <h2>The Queen</h2>
+    <ul>
+        
+        <li>Can move in any cardinal direction or diagnol for as long as it wants</li>
+        <li>Most valuable piece at 9 points</li>
+    </ul>
+</div>
+<div id="king">
+    <h2>The King</h2>
+    <ul>
+        <li>Can move 1 space in any direction</li>
+        <li>If king dies it it game over</li>
+        <li>Can be checked meaning it is forced to move</li>
+        <li>Can castle</li>
+    </ul>
+</div>
+<a href="Quiz.html"><h1>Quiz</h1></a>
+    
+</body>
+</html>
